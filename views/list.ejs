@@ -1,0 +1,22 @@
+<%- include('header'); -%>
+
+  <div class="box" id="heading">
+    <h1> <%= listTitle %> </h1>
+  </div>
+
+  <div class="box">
+    <% for (var i=0; i<items.length ; i++){ %>
+    <div class="item">
+      <input type="checkbox">
+      <p><%= items[i] %></p>
+    </div>
+
+    <%}%>
+        <form class="" action="/" method="post" name="">
+          <input type="text" name="newItem" value=""  placeholder="Add New Task" autocomplete="off" autofocus
+          required="" oninvalid="this.setCustomValidity('Please Enter Task')" oninput="setCustomValidity('')">
+          <button type="submit" name="list" value="<%= listTitle %>">+</button>
+        </form>
+    </div>
+
+<%- include('footer'); -%>
