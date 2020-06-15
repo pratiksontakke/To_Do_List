@@ -14,7 +14,6 @@ app.set("view engine", "ejs");
 //Decleare global variables
 const list_item = [];
 const workItem = [];
-// let item = "";
 
 app.get("/", function(req, res) {
 
